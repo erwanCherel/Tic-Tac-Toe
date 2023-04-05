@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+#gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 600px;
+  width: 600px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.cell,
+.clicked {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+}
+
+#resultDisplay {
+  min-height: 50px;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  background-color: #010101;
+  color: #fefeff;
+  border-radius: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
